@@ -7,7 +7,3 @@ it('renders without crashing', () => {
   ReactDOM.render(<App />, div)
   ReactDOM.unmountComponentAtNode(div)
 })
-
-it('should Return Hello world', function () {
-  expect(HelloWorld()).toEqual('Hello World')
-})
