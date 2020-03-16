@@ -4,5 +4,3 @@ In the project directory, you can run:
 ### `npm start`
 ### `npm test`
 ### `npm run build`
-
-I used d3 to manage easily the scales and the loop exit / add / merge
