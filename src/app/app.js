@@ -22,25 +22,17 @@ class App extends Component {
       .append('g')
 
     this.g = g
-    // .attr('transform', 'translate(' + 10 + ',' + 10 + ')')
 
-    this.updateData(data)
-  }
-
-  updateData (data) {
     barchartManager(data, this.g)
   }
 
   onHandleSubmit = (name, age) => {
-    if (name.length === 0 || !name) {
-
-    }
     data.push({
       id: data.length,
       name: name,
       age: age
     })
-    this.updateData(data)
+    barchartManager(data, this.g)
   }
 
   render () {

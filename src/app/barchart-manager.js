@@ -32,7 +32,7 @@ export const barchartManager = (data, g) => {
   bars
     .enter().append('rect')
     .attr('class', 'bar')
-
+    // init
     .attr('x', (d) => {
       return 0
     })
@@ -40,13 +40,13 @@ export const barchartManager = (data, g) => {
       return y(d.id)
     })
     .attr('height', y.bandwidth())
-
+    // merge
     .merge(bars)
-
+    // animation
     .transition()
     .ease(easeCubic)
     .duration(1000)
-
+    // animate in
     .attr('fill', (d, i) => {
       return colorScale(i)
     })
